@@ -22,12 +22,6 @@
     <header class="site-header">
         <a class="brand" href="#home">
             MÉTROMORPHE
-            <span
-                data-en="— CARTOGRAPHY"
-                data-fr="— CARTOGRAPHIE"
-            >
-                — CARTOGRAPHIE
-            </span>
         </a>
 
         <nav>
@@ -63,6 +57,17 @@
                 EN
             </button>
         </nav>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
 
     <main>
@@ -78,7 +83,9 @@
                     Montréal, réimaginée
                 </p>
 
-                <h1>Métromorphe</h1>
+                <h1>
+                    <span class="metro">Métro</span><span class="morphe">morphe</span>
+                </h1>
 
                 <p
                     class="hero-description"
@@ -194,7 +201,10 @@
                 <div class="project-image shadow-left">
                     <img
                         class="clickable-image"
-                        src="images/ridership.webp"
+                        src="images/ridership-preview.webp"
+                        data-full="images/ridership-full.webp"
+                        loading="lazy"
+                        decoding="async"
                         alt="Carte de l'achalandage du métro de Montréal"
                         data-alt-en="Montréal Metro ridership map"
                         data-alt-fr="Carte de l'achalandage du métro de Montréal"
@@ -228,7 +238,10 @@
                 <div class="project-image shadow-right">
                     <img
                         class="clickable-image"
-                        src="images/horizontal.webp"
+                        src="images/horizontal-preview.webp"
+                        data-full="images/horizontal-full.webp"
+                        loading="lazy"
+                        decoding="async"
                         alt="Interprétation horizontale du réseau de transport rapide de Montréal"
                         data-alt-en="Horizontal interpretation of Montréal's rapid transit network"
                         data-alt-fr="Interprétation horizontale du réseau de transport rapide de Montréal"
@@ -270,7 +283,7 @@
                 </div>
 
                 <div class="project-info">
-                    <p class="project-number">03 · 2024</p>
+                    <p class="project-number">02 · 2024</p>
 
                     <h3
                         data-en="Montréal —<br>Vertical"
@@ -295,7 +308,7 @@
             <div class="coming-soon">
                 <p
                     data-en="More maps coming soon."
-                    data-fr="D'autres à venir."
+                    data-fr="D'autres cartes à venir."
                 >
                     D'autres cartes à venir.
                 </p>
